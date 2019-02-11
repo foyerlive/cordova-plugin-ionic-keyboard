@@ -44,4 +44,11 @@
         <source-file src="src/android/IonicKeyboard.java" target-dir="src/io/ionic/keyboard"/>
     </platform>
 
+    <!-- windows -->
+    <platform name="windows">
+        <js-module src="www/windows/keyboard.js" name="keyboard">
+            <clobbers target="window.Keyboard"/>
+        </js-module>
+    </platform>
+
 </plugin>
